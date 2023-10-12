@@ -20,7 +20,8 @@ public class Portero extends Jugador{
 		return "El futbolista " + this.getNombre() + " tiene " + this.getEdad() + ", y juega de " + this.getPosicion() + " con el dorsal " + this.getDorsal() + ". Le han marcado " + this.getGolesRecibidos();
 	}
 	
-	public int compareTo(Portero p) {
+	public int compareTo(Object o) {
+		Portero p = (Portero) o;
 		return Math.abs(this.getGolesRecibidos() - p.getGolesRecibidos());
 	}
 }
