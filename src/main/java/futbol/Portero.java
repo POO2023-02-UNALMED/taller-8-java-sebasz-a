@@ -4,9 +4,12 @@ public class Portero extends Jugador{
 	public short golesRecibidos;
 	public byte dorsal;
 	
-	public Portero(String nombre, int edad, short golesRecibidos, byte dorsal) {
-		super(nombre, edad, "Portero", (short) golesRecibidos, dorsal);
+	public Portero(String nombre, int edad, short golesMarcados, byte dorsal, short golesRecibidos) {
+		super(nombre, edad, "Portero", (short) 0, dorsal);
 		this.golesRecibidos = golesRecibidos;
+	}
+	public Portero(String nombre, int edad, short golesRecibidos, byte dorsal) {
+		this(nombre, edad, (short)0, golesRecibidos, dorsal);
 	}
 
 	public short getGolesRecibidos() {
@@ -23,5 +26,9 @@ public class Portero extends Jugador{
 	public int compareTo(Object o) {
 		Portero p = (Portero) o;
 		return Math.abs(this.getGolesRecibidos() - p.getGolesRecibidos());
+	}
+	
+	public boolean jugarConLasManos() {
+		return true;
 	}
 }
