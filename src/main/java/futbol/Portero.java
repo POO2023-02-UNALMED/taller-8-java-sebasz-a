@@ -9,7 +9,7 @@ public class Portero extends Jugador{
 		this.golesRecibidos = golesRecibidos;
 	}
 	public Portero(String nombre, int edad, short golesRecibidos, byte dorsal) {
-		this(nombre, edad, (short)0, golesRecibidos, dorsal);
+		this(nombre, edad, (short)0, (short)golesRecibidos, dorsal);
 	}
 
 	public short getGolesRecibidos() {
