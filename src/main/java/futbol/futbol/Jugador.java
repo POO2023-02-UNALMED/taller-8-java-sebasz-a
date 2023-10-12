@@ -38,7 +38,7 @@ public class Jugador extends Futbolista{
 		return "El futbolista " + this.getNombre() + " tiene " +this.getEdad() + ", y juega de " + this.getPosicion() + " con el dorsal " + this.getDorsal() + ". Ha marcado " + this.getGolesMarcados();
 	}
 	
-	public boolean jugarConLasManos(Futbolista f) {
+	public boolean jugarConLasManos() {
 		return false;
 	}
 }
