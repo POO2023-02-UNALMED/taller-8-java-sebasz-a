@@ -31,6 +31,10 @@ public abstract class Futbolista implements Comparable<Futbolista>{
 		return posicion;
 	}
 	
+	@Override
+	public int compareTo(Futbolista f) {
+		return 1;
+	}
 	
 	@Override
 	public String toString() {
