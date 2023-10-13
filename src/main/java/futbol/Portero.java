@@ -1,16 +1,15 @@
 package futbol;
 
-public class Portero extends Jugador{
+public class Portero extends Futbolista{
 	public short golesRecibidos;
 	public byte dorsal;
 	
 	public Portero(String nombre, int edad, short golesMarcados, byte dorsal, short golesRecibidos) {
-		super(nombre, edad, "Portero", (short) 0, dorsal);
+		super(nombre, edad, "Portero");
 		this.golesRecibidos = golesRecibidos;
-	}
-	public Portero(String nombre, int edad, short golesRecibidos, byte dorsal) {
-		this(nombre, edad, (short)0, dorsal, (short)golesRecibidos);
-	}
+		this.dorsal = dorsal; 	
+		}
+	
 
 	public short getGolesRecibidos() {
 		return golesRecibidos;
